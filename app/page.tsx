@@ -9,6 +9,7 @@ import { SwipeDeck } from "@/components/swipe-deck"
 import { SubstitutionPanel } from "@/components/substitution-panel"
 import { WasteMetrics } from "@/components/waste-metrics"
 import { LoadingState } from "@/components/loading-state"
+import { ComparisonTable } from "@/components/comparison-table"
 
 export default function Page() {
   const [isLoading, setIsLoading] = useState(false)
@@ -27,6 +28,7 @@ export default function Page() {
     <main className="relative min-h-screen overflow-x-hidden">
       <Navbar />
       <HeroSection />
+      <ComparisonTable />
       <IngredientInput onGenerate={handleGenerate} />
 
       <AnimatePresence mode="wait">
